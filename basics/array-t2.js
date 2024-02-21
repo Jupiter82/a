@@ -72,8 +72,20 @@ let student_10 = {
 
 
 students.push(student_1,student_2)
-console.log(students)
+// console.log(students)
 students.unshift(student_4,student_3)
-console.log(students)
-students.concat(student_6,student_7)
+// console.log(students)
+// c
+
+
+// let arr = students.slice(0,3)
+// console.log(arr);
+
+
+let altstudents = []
+altstudents.push(student_5,student_6,student_7,student_8,student_9,student_10)
+
+// console.log(students);
+// console.log(altstudents)
+students = students.concat(altstudents)
 console.log(students)
