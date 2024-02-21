@@ -147,3 +147,38 @@ console.log(allowed.sort());
 console.log(allowed.reverse());
 
 // .map()
+
+
+// let users =[
+//   {},
+//   {}
+// ]
+
+// declare variable User Register
+let userRegister = {
+  //key:value
+  name: "",
+  email: "",
+  phone: "",
+}
+// DB store
+//Query
+//table row
+//fetch
+// qurey
+let result = [
+  {
+    name:["//firstname","//middlename","//lastname"],
+    email:"",
+    phone:"",
+    id:""
+  },
+  {
+    name:"",
+    email:"",
+    phone:"",
+    id:""
+  },
+]
+
+// CSV = comma separated value
