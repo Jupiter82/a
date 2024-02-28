@@ -15,28 +15,19 @@
 //declare variable units
 let units = 150
 let total = 0;
-
-// if else statement //nested if else
+// using else if statement
 if (units <= 20 ) {
     total = 80
+}else if(units <= 35){
+    total = 80+((units-20)*4)
+}else if(units <= 55){
+    total = 80+60+((units-35)*5)
+}else if (units <= 75) {
+    total = 80+60+100+((units-55)*7)
+}else if (units <= 100) {
+    total = 80+60+100+140+((units-75)*10)
 }else{
-    if(units <= 35){
-        total = 80+((units-20)*4)
-    }else{
-        if(units <= 55){
-            total = 80+60+((units-35)*5)
-        }else{
-            if (units <= 75) {
-                total = 80+60+100+((units-55)*7)
-            }else{
-                if (units <= 100) {
-                    total = 80+60+100+140+((units-75)*10)
-                }else{
-                    total = 80+60+100+140+250+((units-100)*15)
-                }
-            }
-        }
-    }
+    total = 80+60+100+140+250+((units-100)*15)
 }
 
 //concatination
