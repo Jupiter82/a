@@ -7,11 +7,11 @@ let i =1;
 //for-in
 //for-of
 //Array 
-    // .map
-    // .filter
-    // .forEach
-    // .some
-    // .reduce
+    // .map (functional loop)
+    // .filter (functional loop)
+    // .forEach (functional loop)
+    // .some (functional loop)
+    // .reduce (functional loop)
 
 //do-while
 do{
@@ -82,22 +82,35 @@ let students = [//array
 do{
 //
 students[i].percent = students[i].markObt/500*100
+// if (students[i].percent >= 80/*expression*/) {
+//     students[i].division = "Distinction"
+// }else{
+//     if(students[i].percent >= 60){
+//         students[i].division = "First Division"
+//     }else{
+//         if (students[i].percent >= 45) {
+//           students[i].division = "Second Division"
+//         }else{
+//           if (students[i].percent >= 32) {
+//               students[i].division = "Third Division"
+//           }else{
+//               students[i].division = "Sorry you have failed"
+//           }
+//         }
+//     }
+// }
+//access index i of students array//access percentage property of object of i index
 if (students[i].percent >= 80/*expression*/) {
+    //body // assigning new property division and populate value in division 
     students[i].division = "Distinction"
-}else{
-    if(students[i].percent >= 60){
-        students[i].division = "First Division"
-    }else{
-        if (students[i].percent >= 45) {
-          students[i].division = "Second Division"
-        }else{
-          if (students[i].percent >= 32) {
-              students[i].division = "Third Division"
-          }else{
-              students[i].division = "Sorry you have failed"
-          }
-        }
-    }
+}else if(students[i].percent >= 60){
+    students[i].division = "First Division"
+}else if (students[i].percent >= 45) {
+        students[i].division = "Second Division"
+}else if (students[i].percent >= 32) {
+    students[i].division = "Third Division"
+} else{
+    students[i].division = "Sorry you have failed"
 }
 //concatination
 console.log("Name:" + students[i].name );

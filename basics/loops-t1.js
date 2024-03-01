@@ -45,12 +45,12 @@ products.push(prod1, prod2, prod3, prod4, prod5);
 let i = 0//acces 0 index of array
 let size = products.length //length of array
 do {
-    
+  var discountAmt = (products[i].price * products[i].discount) / 100;
+  var afterDiscount = products[i].price - discountAmt;
+  products[i].afterDis = afterDiscount;
+  products[i].disAmt = discountAmt;
+    i++
 } while (i < size);
 
-var discountAmt = (products[0].price * products[0].discount) / 100;
-var afterDiscount = products[0].price - discountAmt;
-products[0].afterDis = afterDiscount;
-products[0].disAmt = discountAmt;
 
 console.log(products);
