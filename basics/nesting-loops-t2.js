@@ -44,14 +44,34 @@
 
  */
 
-//patter 1
+//pattern 1
 
 
+//declare variable numberOfRow and define the number of rows you want in your patter
+let numberOfRow = 7;
 
+for (let i = 1; i <= numberOfRow; i++) {
+    let row ='';  //Variable to store each row
+    
+    for (let j = 1; j <= i; j++) {   
+        row = row + j + ''; //Concationcation Add the current number and a space to the row
+    }
+    console.log(row);
+}
+console.log("");
 
+//pattern 2
 
+//Outer loop to iterate over rows in reverse order
+for (let i = numberOfRow ;i >= 1; i--) {
+    let rowReverse =''; //Variable to store each row
 
-
+    //Inner loop to generate number for each row
+    for (let j = 1; j <= i; j++) {
+        rowReverse += j + '';        
+    }
+    console.log(rowReverse)
+}
 
 
 
