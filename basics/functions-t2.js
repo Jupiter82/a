@@ -49,3 +49,4 @@ console.log("Marks: " + student.marks)
 console.log("Percent: " + per + "%")
 console.log("Division: " + division )
 
+
