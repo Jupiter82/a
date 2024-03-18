@@ -82,3 +82,13 @@ const user ={//object
 
 user.getName()
 
+
+// Clouser
+// Callback
+// Loop function
+// Async
+
+
+//functin defination = () =>{} arrow function
+
+

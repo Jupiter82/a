@@ -12,32 +12,53 @@
 
 
 
-
-let student = {
+//declare varibale student
+let student = { //object
+   // key or property : value
     name:"student one",
-    marks:480
+    marks:480,
+    getPercent : function(){// general functin in value of object
+      this.percent = this.marks/500 * 100;//new key with this
+      this.getDivision()
+    },
+    getDivision: function(){
+      if (this.percent >= 80) {
+         this.division = ("Distinction");
+      } else if (this.percent >= 60) {
+         this.division = ("First Division");
+      } else if (this.percent >= 45) {
+         this.division = ("Second Division");
+      } else if (this.percent >= 35) {
+         this.division = ("Third Division");
+      } else {
+         return("Failed");
+      } 
 }
 
 //1 step find percentage
 //declare variable percentage return value in array function
-const getPercent = (marks) =>{
-    return marks/500 *100;
-}
+// const getPercent = (marks) =>{
+//     return marks/500 *100;
+// }
 
 //2nd step else-if statement 
 
-let getDivision = (percent) => {
-    if (percent >= 80) {
-       return("Distinction");
-    } else if (percent >= 60) {
-       return("First Division");
-    } else if (percent >= 45) {
-       return("Second Division");
-    } else if (percent >= 35) {
-       return("Third Division");
-    } else {
-       return("Failed");
-    } 
+// let getDivision = (percent) => {
+//     if (percent >= 80) {
+//        return("Distinction");
+//     } else if (percent >= 60) {
+//        return("First Division");
+//     } else if (percent >= 45) {
+//        return("Second Division");
+//     } else if (percent >= 35) {
+//        return("Third Division");
+//     } else {
+//        return("Failed");
+//     } 
+// }
+
+
+
 }
 
 const per = getPercent(student.marks) //arguments //call function
