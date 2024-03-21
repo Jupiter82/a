@@ -27,3 +27,22 @@ const func3 = () => {
 let res = func1() //callfunction //if async ===> BP 1
 func3() // not async ===> Outp
 //Output
+
+
+
+const function1 = () => {
+    const function2 = () => {
+        console.log("I am inside function2")
+    }
+    return function2
+}
+
+
+// function1()//function execution //function call
+
+// function1// function scope
+
+let respone = function1
+respone()//clouser and clouser behaviour
+
+//problem dependency used callback function
