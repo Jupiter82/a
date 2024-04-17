@@ -23,3 +23,8 @@ const stopTimer = () =>{
 const startTimer = () => { //arrow function
   timer = setInterval(getClock, 1000)
 }
+
+// alert("You have clicked:15")
+
+// let name = prompt("Enter Your Name")
+// alert(name)

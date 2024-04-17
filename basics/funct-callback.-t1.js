@@ -5,3 +5,6 @@
 // After the first click, initiate a countedown, on 5 second of the first click,
 // Print You have clicked .... <value>
 // On page reload the system should restrat
+// alert("You have clicked:15")
+
+
