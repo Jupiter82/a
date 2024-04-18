@@ -8,7 +8,12 @@ const functionAdd = (numbs) => {
     // const caculate = () => {
         // numbs.map(calculate)
     // }
-numbs.map((value,index)=>{})
+let response = numbs.map((value)=>{
+    sum += value
+    return sum
+    //return expect
+})
+console.log(response)
 
     // for (let num of numbs) {
     //     sum += num;
