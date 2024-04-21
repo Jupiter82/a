@@ -7,7 +7,7 @@ const functionAdd = (numbs) => {
 
     // const caculate = () => {
         // numbs.map(calculate)
-    // }
+    // }p
 let response = numbs.map((value)=>{
     sum += value
     return sum
