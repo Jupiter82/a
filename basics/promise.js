@@ -105,3 +105,50 @@ loginCb("userna",'pwd',
 // .listen(port,host,(error) => {})
 
 // .get((req,res,next) => {next()})
+
+
+
+// ---------------------------------------------------
+// promise return
+// promise
+// async-await
+
+const function1 = () => {
+    return new Promise((res,rej) => {
+        //res()
+        rej()
+    })
+}
+
+// const function2 = async() => {
+    async function function2(){
+    //promise
+    // return "" //resolve
+    // throw "" //reject
+
+    console.log("I am in func2")
+    let x = true;
+    if(x){
+        return "Resolve 2"
+    }else{
+        throw "Reject 2"
+    }
+}
+
+
+// function2()
+//     .then()
+//     .catch()
+
+const asyncFun = async () => {
+  try {
+    let resolve = await function2();
+    console.log("I am after resolve")
+  } catch (reject) {
+    console.log(reject);
+  }
+};
+
+asyncFun()
+
+//wait unless this function is completed
